@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>わたしのホームページ | トップページ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="../css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+</head>
+<body>
+	<h1>わたしのホームページ</h1>
+    <p th:text="'こんにちは, ' + ${name} + 'さん!'" />
+    <a href="hello.html" th:href="@{/hello}">Chart.js サンプルページ1</a>
+</body>
+</html>
