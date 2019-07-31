@@ -3,7 +3,7 @@ package com.web.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.web.demo.IndexController;
+import com.web.demo.controller.IndexController;
 
 @SpringBootApplication
 public class WebDemo2Application {

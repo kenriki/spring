@@ -1,6 +1,5 @@
-package com.web.demo;
+package com.web.demo.controller;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
