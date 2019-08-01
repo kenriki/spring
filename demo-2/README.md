@@ -37,3 +37,6 @@
 
 # データベース連携
 [https://qiita.com/hiroshi_maz/items/b2e916144523614837a6](https://qiita.com/hiroshi_maz/items/b2e916144523614837a6)
+
+# データベースにセッション情報を格納
+[https://qiita.com/d-yosh/items/7a24dab88bcae367b4d8](https://qiita.com/d-yosh/items/7a24dab88bcae367b4d8)
