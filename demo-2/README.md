@@ -82,6 +82,19 @@ MariaDB [testdb]> show create database testdb; ←文字コード確認
 | testdb   | CREATE DATABASE `testdb` /*!40100 DEFAULT CHARACTER SET latin1 */ |
 +----------+-------------------------------------------------------------------+
 1 row in set (0.01 sec)
+
+MariaDB [testdb]> create table `tbl_1`(id int, name varchar(255),score varchar(255));
+Query OK, 0 rows affected (0.04 sec)
+MariaDB [testdb]> insert into `tbl_1`(`id`,`name`,`score`) values(1,'abc',300);
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [testdb]> select * from tbl_1;
++------+------+-------+
+| id   | name | score |
++------+------+-------+
+|    1 | abc  | 300   |
++------+------+-------+
+1 row in set (0.00 sec)
 ```
 
 ## MariaDBの環境構築(Windows)
@@ -113,6 +126,9 @@ spring.jpa.hibernate.ddl-auto=create-drop
 [https://qiita.com/mendywata/items/685e9084c708d5b00477](https://qiita.com/mendywata/items/685e9084c708d5b00477)　　
 
 [https://qiita.com/Uejun/items/34a023819cba0b01eb78](https://qiita.com/Uejun/items/34a023819cba0b01eb78)
+
+## MySQLでよく見かけるエラーの発生原因と対策方法
+[https://proengineer.internous.co.jp/content/columnfeature/7054](https://proengineer.internous.co.jp/content/columnfeature/7054)
 
 # データベース連携
 [https://qiita.com/hiroshi_maz/items/b2e916144523614837a6](https://qiita.com/hiroshi_maz/items/b2e916144523614837a6)
