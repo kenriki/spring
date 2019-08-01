@@ -49,3 +49,6 @@ model.addAttribute("message", "hogehoge");
 
 # データベースにセッション情報を格納
 [https://qiita.com/d-yosh/items/7a24dab88bcae367b4d8](https://qiita.com/d-yosh/items/7a24dab88bcae367b4d8)
+
+# Chart.js　Thymeleaf×SpringBoot
+[https://qiita.com/tf-tky/items/49cee83229d1294e4de2](https://qiita.com/tf-tky/items/49cee83229d1294e4de2)
