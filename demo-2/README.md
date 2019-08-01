@@ -45,7 +45,15 @@ model.addAttribute("message", "hogehoge");
 > そのHTMLファイルから見た際の相対パス指定
 
 # MariaDBについて
-> コマンド一覧
+> MariaDB(マリアディービー)とは、
+「MySQL」から派生したオープンソース
+リレーショナルデータベースシステムです。
+「列単位」で処理を行うカラム型データベースエンジン
+による並列処理が特徴です。
+「拡張性」「処理性能」「高品質」が評価され、
+世界中で急速にシェアを拡大しています。
+
+## コマンド一覧
 [https://qiita.com/met_ganchan13/items/4a26bc419eea8f642b44](https://qiita.com/met_ganchan13/items/4a26bc419eea8f642b44)
 
 ```
