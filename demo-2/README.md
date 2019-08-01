@@ -110,7 +110,8 @@ spring.jpa.hibernate.ddl-auto=create-drop
 [https://springframework.guru/configuring-spring-boot-for-mariadb/](https://springframework.guru/configuring-spring-boot-for-mariadb/)
 
 ## MariaDBの環境構築(CentOS7)⇒　VM環境で作りたい人向け
-[https://qiita.com/mendywata/items/685e9084c708d5b00477](https://qiita.com/mendywata/items/685e9084c708d5b00477)
+[https://qiita.com/mendywata/items/685e9084c708d5b00477](https://qiita.com/mendywata/items/685e9084c708d5b00477)　　
+
 [https://qiita.com/Uejun/items/34a023819cba0b01eb78](https://qiita.com/Uejun/items/34a023819cba0b01eb78)
 
 # データベース連携
