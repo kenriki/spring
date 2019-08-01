@@ -52,3 +52,5 @@ model.addAttribute("message", "hogehoge");
 
 # Chart.js　Thymeleaf×SpringBoot
 [https://qiita.com/tf-tky/items/49cee83229d1294e4de2](https://qiita.com/tf-tky/items/49cee83229d1294e4de2)
+
+[https://arimodoki.dip.jp/promenade/json_chart.html](https://arimodoki.dip.jp/promenade/json_chart.html)
