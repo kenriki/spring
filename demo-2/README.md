@@ -35,3 +35,5 @@
 ### href属性やsrc属性について
 > そのHTMLファイルから見た際の相対パス指定
 
+# データベース連携
+[https://qiita.com/hiroshi_maz/items/b2e916144523614837a6](https://qiita.com/hiroshi_maz/items/b2e916144523614837a6)
