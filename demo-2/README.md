@@ -44,6 +44,75 @@ model.addAttribute("message", "hogehoge");
 ### href属性やsrc属性について
 > そのHTMLファイルから見た際の相対パス指定
 
+# MariaDBについて
+> コマンド一覧
+[https://qiita.com/met_ganchan13/items/4a26bc419eea8f642b44](https://qiita.com/met_ganchan13/items/4a26bc419eea8f642b44)
+
+```
+MariaDB [(none)]> show databases;  ←データベース一覧表示
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+3 rows in set (0.00 sec)
+
+MariaDB [(none)]> create database testdb; ←データベース作成
+Query OK, 1 row affected (0.01 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| testdb             |
++--------------------+
+4 rows in set (0.01 sec)
+
+MariaDB [(none)]> use testdb; ←データベース切替
+Database changed
+MariaDB [testdb]> show create database testdb; ←文字コード確認	
++----------+-------------------------------------------------------------------+
+| Database | Create Database                                                   |
++----------+-------------------------------------------------------------------+
+| testdb   | CREATE DATABASE `testdb` /*!40100 DEFAULT CHARACTER SET latin1 */ |
++----------+-------------------------------------------------------------------+
+1 row in set (0.01 sec)
+```
+
+## MariaDBの環境構築(Windows)
+[https://techfun.cc/database/windows-database-mysql.html](https://techfun.cc/database/windows-database-mysql.html)
+
+```pom.xml
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+    <groupId>org.mariadb.jdbc</groupId>
+    <artifactId>mariadb-java-client</artifactId>
+</dependency>
+```
+
+```application.properties
+spring.datasource.url=jdbc:mariadb://localhost:3030/springbootdb
+spring.datasource.username=myuser
+spring.datasource.password=mypwd
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.jpa.hibernate.ddl-auto=create-drop
+```
+> 以下参考
+[https://springframework.guru/configuring-spring-boot-for-mariadb/](https://springframework.guru/configuring-spring-boot-for-mariadb/)
+
+## MariaDBの環境構築(CentOS7)⇒　VM環境で作りたい人向け
+[https://qiita.com/mendywata/items/685e9084c708d5b00477](https://qiita.com/mendywata/items/685e9084c708d5b00477)
+[https://qiita.com/Uejun/items/34a023819cba0b01eb78](https://qiita.com/Uejun/items/34a023819cba0b01eb78)
+
 # データベース連携
 [https://qiita.com/hiroshi_maz/items/b2e916144523614837a6](https://qiita.com/hiroshi_maz/items/b2e916144523614837a6)
 
