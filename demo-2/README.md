@@ -1,3 +1,12 @@
+# リダイレクト先ページにパラメータを渡す方法
+[https://qiita.com/horimislime/items/387fa7805d1552149edb](https://qiita.com/horimislime/items/387fa7805d1552149edb)
+
+```
+//メッセージhogehogeを渡す
+model.addAttribute("message", "hogehoge");
+
+```
+
 # org.springframework.web 見つからない場合の解決方法
 
 > pom.xml に以下を追加して、プロジェクト名右クリックのMavenにあるプロジェクト更新
