@@ -26,6 +26,10 @@ model.addAttribute("message", "hogehoge");
 3. タスクマネージャーの詳細タブをクリック
 4. javax.exe のPIDと手順（１）のPIDが一致しているタスクを終了させる
 
+または、3,4やらずにtaskkillコマンド実行！！
+プロセスID(1234)を終了したい場合：
+C:\> taskkill /pid 1234 /f
+
 # 外部ファイルの読み込み方法
 
 ## 手順
