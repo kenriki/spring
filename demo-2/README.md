@@ -170,3 +170,7 @@ git shortlog --all --shortstat --oneline --no-merges
  --author="なまえ"
 ```
 
+.tigrc 設定ファイル　サンプル
+[https://qiita.com/sfus/items/063797a1dd8fdc7d032f](
+https://qiita.com/sfus/items/063797a1dd8fdc7d032f)
+
