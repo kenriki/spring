@@ -159,3 +159,14 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ## プロット種類
 [https://qiita.com/serv-platong/items/ff42761373302f2d472e](https://qiita.com/serv-platong/items/ff42761373302f2d472e)
 
+# Git コマンド
+```
+git log --shortstat --oneline --no-merges
+
+```
+
+```
+git shortlog --all --shortstat --oneline --no-merges
+ --author="なまえ"
+```
+
