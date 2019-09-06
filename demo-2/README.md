@@ -148,7 +148,14 @@ spring.jpa.hibernate.ddl-auto=create-drop
 # データベースにセッション情報を格納
 [https://qiita.com/d-yosh/items/7a24dab88bcae367b4d8](https://qiita.com/d-yosh/items/7a24dab88bcae367b4d8)
 
-# Chart.js　Thymeleaf×SpringBoot
+# Chart.jsまとめ
+
+## Chart.js　Thymeleaf×SpringBoot
 [https://qiita.com/tf-tky/items/49cee83229d1294e4de2](https://qiita.com/tf-tky/items/49cee83229d1294e4de2)
 
 [https://arimodoki.dip.jp/promenade/json_chart.html](https://arimodoki.dip.jp/promenade/json_chart.html)
+
+
+## プロット種類
+[https://qiita.com/serv-platong/items/ff42761373302f2d472e](https://qiita.com/serv-platong/items/ff42761373302f2d472e)
+
