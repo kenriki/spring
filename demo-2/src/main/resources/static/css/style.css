@@ -4,6 +4,7 @@ html, body {
 
 h1 {
 	background-color: rgb(100, 100, 130);
+	color: #fff;
 }
 
 h2 {
@@ -12,10 +13,38 @@ h2 {
 	background-color: rgb(10, 30, 130);
 }
 
-a {
-	font-size: 13pt;
+li {
+	list-style-type: none;
+	float: left;
+	border-right:1px #ccc solid;
+	line-hight:1.3em;
+	width: 200px;
+	height:35px;
+	text-align:center;
+	color:#000;
+	background:rgba(50,50,50,0.85); 
 }
 
-a:hover {
-	back-ground-color: lightpink;
+.clear {
+	clear:both;
+}
+
+.style-1{
+	background:rgba(50,50,50,0.85);
+	border-bottom:1px #ccc solid;
+	width: 250px;
+}
+
+a:link {color:#fff;} 
+a:visited {color:#00ccff;} 
+a:hover {color:#ffffff;}
+a:active {color:#ffff00;} 
+
+a {
+	font-size: 13pt;
+	text-decoration: none;
+}
+
+li:hover,.style-1:hover {
+	background-color: lightpink;
 }

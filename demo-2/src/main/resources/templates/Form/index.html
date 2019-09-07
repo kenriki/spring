@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thymeleaf で出力しますよ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../css/style.css" th:href="@{/css/style.css}"
+	rel="stylesheet"></link>
+<style>
+div + label {
+  margin: 5px;
+  padding: 3px 3px 0px 0px;
+}
+</style>
+</head>
+<body>
+	<h1>登録ページ</h1>
+	<p th:text="'こんにちは, ' + ${name} + 'さん!'" />
+	<hr>
+	<form action="" method="post">
+		<div>
+			<label>ID: </label> <input type="text" id="id_text_form_id"
+				placeholder="input your id">
+		</div>
+		<div>
+			<label>Name: </label> <input type="text" id="id_text_form_name"
+				placeholder="input your name">
+		</div>
+		<div>
+			<label>Age: </label> <input type="text" id="id_text_form_age"
+				placeholder="input your age">
+		</div>
+		<input type="submit" value="登録">
+	</form>
+</body>
+</html>
