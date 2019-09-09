@@ -180,15 +180,39 @@ git init
 
 ```
 
-
 ## Git コマンド
 
+```bash
+# ステージング前のため赤く
+git status 
+
+# ファイルをステージングに上げる
+git add c:/xx/xxx.js
+
+# ステージング後のため緑になること確認
+git status
+
+# コミット
+git commit -m "xxx 処理を追加"
+
+# リモートリポジトリにプッシュ
+git push origin master #初回
+git push #通常
+
+# チームで開発してるときは、プッシュ前に
+# git pullをしてからpushすることでマージ処理も追加されます。
+# ローカルリポジトリにマージしたくないときは、git fetch
+# その後、tig して「r」打つことでフェッチ内容確認できる
+
+
 ```
+
+```bash
 git log --shortstat --oneline --no-merges
 
 ```
 
-```
+```bash
 git shortlog --all --shortstat --oneline --no-merges
  --author="なまえ"
 ```
