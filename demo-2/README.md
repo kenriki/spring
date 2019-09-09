@@ -3,7 +3,7 @@
 ## リダイレクト先ページにパラメータを渡す方法
 [https://qiita.com/horimislime/items/387fa7805d1552149edb](https://qiita.com/horimislime/items/387fa7805d1552149edb)
 
-```
+```java
 //メッセージhogehogeを渡す
 model.addAttribute("message", "hogehoge");
 
@@ -13,7 +13,7 @@ model.addAttribute("message", "hogehoge");
 
 > pom.xml に以下を追加して、プロジェクト名右クリックのMavenにあるプロジェクト更新
 
-```
+```xml
 <dependency>
 	<groupId>org.springframework.boot</groupId>
 	<artifactId>spring-boot-starter-web</artifactId>
@@ -28,7 +28,7 @@ model.addAttribute("message", "hogehoge");
 3. cssファイルやjsファイルを配置
 4. htmlファイルのheadに以下を書く。
 
-```
+```html
 <link href="../css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
 <script src="../js/Chart.min.js" th:href="@{/js/Chart.min.js}"></script>
 ```
@@ -62,7 +62,7 @@ C:\> taskkill /pid 1234 /f
 ## コマンド一覧
 [https://qiita.com/met_ganchan13/items/4a26bc419eea8f642b44](https://qiita.com/met_ganchan13/items/4a26bc419eea8f642b44)
 
-```
+```vim
 MariaDB [(none)]> show databases;  ←データベース一覧表示
 +--------------------+
 | Database           |
