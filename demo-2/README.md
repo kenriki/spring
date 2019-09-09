@@ -1,4 +1,6 @@
-# リダイレクト先ページにパラメータを渡す方法
+# Spring bootフレームワーク
+
+## リダイレクト先ページにパラメータを渡す方法
 [https://qiita.com/horimislime/items/387fa7805d1552149edb](https://qiita.com/horimislime/items/387fa7805d1552149edb)
 
 ```
@@ -7,7 +9,7 @@ model.addAttribute("message", "hogehoge");
 
 ```
 
-# org.springframework.web 見つからない場合の解決方法
+## org.springframework.web 見つからない場合の解決方法
 
 > pom.xml に以下を追加して、プロジェクト名右クリックのMavenにあるプロジェクト更新
 
@@ -17,6 +19,24 @@ model.addAttribute("message", "hogehoge");
 	<artifactId>spring-boot-starter-web</artifactId>
 </dependency>
 ```
+
+## 外部ファイルの読み込み方法
+
+### 手順
+1. src/main/resources下にstaticフォルダ作成
+2. static下に./cssや./js フォルダ作成
+3. cssファイルやjsファイルを配置
+4. htmlファイルのheadに以下を書く。
+
+```
+<link href="../css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
+<script src="../js/Chart.min.js" th:href="@{/js/Chart.min.js}"></script>
+```
+#### th:href属性について
+> @～と指定することで、static配下と連動
+
+#### href属性やsrc属性について
+> そのHTMLファイルから見た際の相対パス指定
 
 # 特定のポートを使用しているプロセスの殺し方(Windows)
 
@@ -29,24 +49,6 @@ model.addAttribute("message", "hogehoge");
 または、3,4やらずにtaskkillコマンド実行！！
 プロセスID(1234)を終了したい場合：
 C:\> taskkill /pid 1234 /f
-
-# 外部ファイルの読み込み方法
-
-## 手順
-1. src/main/resources下にstaticフォルダ作成
-2. static下に./cssや./js フォルダ作成
-3. cssファイルやjsファイルを配置
-4. htmlファイルのheadに以下を書く。
-
-```
-<link href="../css/style.css" th:href="@{/css/style.css}" rel="stylesheet"></link>
-<script src="../js/Chart.min.js" th:href="@{/js/Chart.min.js}"></script>
-```
-### th:href属性について
-> @～と指定することで、static配下と連動
-
-### href属性やsrc属性について
-> そのHTMLファイルから見た際の相対パス指定
 
 # MariaDBについて
 > MariaDB(マリアディービー)とは、
