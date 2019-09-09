@@ -176,3 +176,59 @@ https://qiita.com/sfus/items/063797a1dd8fdc7d032f)
 
 [https://qiita.com/vivid_muimui/items/7e7a740e6537749de0c0](https://qiita.com/vivid_muimui/items/7e7a740e6537749de0c0)
 
+
+# Ajax について
+
+## jQuery.ajax() でファイルを送る
+
+### ポイント
+
+> dataType はサーバの出力に合わせて変更して下さい。
+
+> ポイントは contentType と processData が false になるところです。
+> contentType = 'multipart/form-data' にはなりません。
+
+```html
+<form id="ajaxform">
+    <input id="file" name="file" type="file"></input>
+    <input id="submit" type="submit"></input>
+</form>
+
+```
+
+```js
+// ファイルのアップロード
+$('#submit').click(function() {
+  
+    // FormData の作成
+    var form = $('#ajaxform').get(0);
+    var formData = new FormData(form);
+  
+    // FormData を送信
+    $.ajax('/upload', {
+        method: 'POST',
+        contentType: false,
+        processData: false,
+        data: formData,
+        dataType: 'json',
+        error: function() {
+            console.log('error');
+        },
+        success: function() {
+            console.log('success');
+        }
+    });
+ 
+    // false を返してデフォルトの動作をキャンセル
+    return false;
+});
+
+```
+## 参考
+
+jQuery.ajax()
+    [http://api.jquery.com/jQuery.ajax/](http://api.jquery.com/jQuery.ajax/)
+
+The FormData Interface - W3C
+    [http://www.w3.org/TR/2010/WD-XMLHttpRequest2-20100907/#the-formdata-interface](http://www.w3.org/TR/2010/WD-XMLHttpRequest2-20100907/#the-formdata-interface)
+
