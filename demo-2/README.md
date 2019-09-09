@@ -159,7 +159,30 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ## プロット種類
 [https://qiita.com/serv-platong/items/ff42761373302f2d472e](https://qiita.com/serv-platong/items/ff42761373302f2d472e)
 
-# Git コマンド
+# Git について
+## 初期設定
+```bash
+git config --global user.name "xxxx"
+git config --global user.email "xxxx"
+git config --global color.ui true
+git config -l 　　　　　　　　　// 設定が見れる
+git config --help 　// help画面 
+
+```
+
+## gitを使用
+> 作業するフォルダに「git init」でgitが使えるようになる
+
+```bash
+mkdir myweb
+cd myweb
+git init
+
+```
+
+
+## Git コマンド
+
 ```
 git log --shortstat --oneline --no-merges
 
