@@ -281,3 +281,17 @@ jQuery.ajax()
 The FormData Interface - W3C
     [http://www.w3.org/TR/2010/WD-XMLHttpRequest2-20100907/#the-formdata-interface](http://www.w3.org/TR/2010/WD-XMLHttpRequest2-20100907/#the-formdata-interface)
 
+# MyBatis 
+## dbアクセスする際、値が渡せないとき
+
+```console
+Error querying database. Cause: org.apache.ibatis.BindingException: Parameter 'xxx' not found
+
+```
+
+>xml とjavaの引数名を一致させるだけではマッピングできない
+
+
+> 引数を、(@Param("xxx") int xxx)とする
+
+
