@@ -297,4 +297,5 @@ Error querying database. Cause: org.apache.ibatis.BindingException: Parameter 'x
 ## 参考
 [https://morizyun.github.io/java/library-mybatis.html](https://morizyun.github.io/java/library-mybatis.html)
 
+[https://ja.stackoverflow.com/questions/18556/%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF%E3%81%8C%E5%A4%9A%E3%81%84%E6%99%82%E3%81%AE%E3%81%BFmybatis%E3%81%8C%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E5%87%BA%E3%81%99](パラメータが多い時のみMyBatisがエラーを出す)
 
