@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @Controller
 @EnableAutoConfiguration
+@RequestMapping("/myHomePage")
 public class IndexController {
 
 	@RequestMapping("/hello")
