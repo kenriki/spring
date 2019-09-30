@@ -157,6 +157,7 @@ spring.jpa.hibernate.ddl-auto=create-drop
 
 [https://arimodoki.dip.jp/promenade/json_chart.html](https://arimodoki.dip.jp/promenade/json_chart.html)
 
+[https://output.jsbin.com/disoyivixo](https://output.jsbin.com/disoyivixo)
 
 ## プロット種類
 [https://qiita.com/serv-platong/items/ff42761373302f2d472e](https://qiita.com/serv-platong/items/ff42761373302f2d472e)
